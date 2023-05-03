@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+strong{
+  color:#fff
+}
+p{
+  color: rgb(212 212 216)
+}

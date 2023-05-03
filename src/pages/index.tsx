@@ -34,7 +34,6 @@ export default function Home() {
           <div className='flex flex-col'>
             <img src={avatar} alt={'Foto de fipdev2'} className='rounded-full border-light-purple border-2 w-80 mb-2' />
             <p><strong>Username: </strong> fipdev2</p>
-            <p><strong>Commits: </strong> 9232</p>
             <p><strong>Repositórios: </strong> {repos}</p>
           </div>
 

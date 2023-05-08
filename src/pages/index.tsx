@@ -29,17 +29,17 @@ export default function Home() {
   return (
     <>
 
-      <main className='w-screen h-screen flex flex-col items-center justify-center'>
-        <div className='flex justify-between bg-purple-gray max-w-screen-lg bg-opacity-50 rounded-3xl border-light-purple border-2 px-16 py-16 backdrop-blur-md'>
+      <main className='w-screen h-screen flex flex-col items-center justify-center xl:p-4'>
+        <div className='flex justify-between md:flex-col md:items-center bg-purple-gray max-w-screen-lg bg-opacity-50 rounded-3xl border-light-purple border-2 px-16 py-16 xl:p-8 backdrop-blur-md 2xl:max-w-[calc(100%-70px)]'>
           <div className='flex flex-col'>
-            <img src={avatar} alt={'Foto de fipdev2'} className='rounded-full border-light-purple border-2 w-80 mb-2' />
-            <p><strong>Username: </strong> fipdev2</p>
-            <p><strong>Repositórios: </strong> {repos}</p>
+            <img src={avatar} alt={'Foto de fipdev2'} className='rounded-full border-light-purple border-2 w-80 xl:w-72 mb-2' />
+            <p className='md:text-center'><strong>Username: </strong> fipdev2</p>
+            <p className='md:text-center'><strong>Repositórios: </strong> {repos}</p>
           </div>
 
-          <div className='w-1/2 flex flex-col justify-between'>
-            <div>
-              <strong>Sobre</strong>
+          <div className='w-1/2 flex flex-col justify-between md:w-full'>
+            <div className='md:text-center'>
+              <strong >Sobre</strong>
               <p className='mb-8'>Meu nome é Filipe, sou graduando
                 em ciência da computação,
                 tenho experiência em liderança
@@ -47,14 +47,14 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
+            <div className='md:text-center'>
               <strong>Fatos Curiosos</strong>
               <p className='mb-8'>Adoro assistir anime, jogar e ir para academia 💪</p>
             </div>
 
-            <div>
+            <div className='md:text-center '>
               <strong>Principais tecnologias</strong>
-              <div className='flex gap-2 mt-2'>
+              <div className='flex gap-2 mt-2 md:justify-center md:flex-wrap'>
                 <img alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
                 <img alt="TypeScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" />
                 <img alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" />

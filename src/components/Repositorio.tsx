@@ -25,11 +25,11 @@ export default function Repositorio({ repoName, created_at, updated_at, url, clo
 
     return (
         <Popover.Root>
-            <div className=" grid grid-flow-row grid-rows-1 bg-purple-gray max-w-md bg-opacity-50 rounded-xl border-light-purple border-2 h-24 px-4 py-4 backdrop-blur-md w-full">
+            <div className=" grid grid-flow-row grid-rows-1 bg-purple-gray max-w-md xl:max-w-[360px] md:max-w-md bg-opacity-50 rounded-xl border-light-purple border-2 h-24 px-4 py-4 backdrop-blur-md w-full">
                 <div className="flex items-center justify-between">
                     <strong>{repoName}</strong>
-                    <Popover.Trigger className="hover:cursor-pointer">
-                        <TiChevronRight />
+                    <Popover.Trigger className="hover:cursor-pointer border-2 rounded-md border-zinc-400">
+                        <TiChevronRight size={20} color="#fff"/>
                     </Popover.Trigger>
                 </div>
                 <div className="flex justify-between">
@@ -39,24 +39,25 @@ export default function Repositorio({ repoName, created_at, updated_at, url, clo
             </div>
             <Popover.Portal>
                 <Popover.Content className="flex flex-col bg-light-purple bg-opacity-30 rounded-xl border-2 border-light-purple backdrop-blur-md p-4 gap-2">
-                    <div className="flex items-center w-full justify-between">
+                <Popover.Arrow className="fill-light-purple h-2 w-3"/>
+                    
+                        <a href={url} className="hover:cursor-pointer flex items-center w-full justify-between">
                         ir para repositório
-                        <a href={url} className="hover:cursor-pointer">
-                            <TiChevronRight size={20} />
+                            <TiChevronRight size={20} color="#fff"/>
                         </a>
-                    </div>
-                    <div className="flex items-center w-full justify-between">
+                    
+                   
+                        <a onClick={() => { copyToClipboard(cloneHttps); toast() }} className="hover:cursor-pointer flex items-center w-full justify-between">
                         clonar via https
-                        <a onClick={() => { copyToClipboard(cloneHttps); toast() }} className="hover:cursor-pointer">
                             <VscCopy size={20} />
                         </a>
-                    </div>
-                    <div className="flex items-center w-full justify-between" >
+                    
+                    
+                        <a onClick={() => { copyToClipboard(cloneSsh); toast() }} className="hover:cursor-pointer flex items-center w-full justify-between">
                         clonar via ssh
-                        <a onClick={() => { copyToClipboard(cloneSsh); toast() }} className="hover:cursor-pointer">
                             <VscCopy size={20} />
                         </a>
-                    </div>
+                   
                 </Popover.Content>
             </Popover.Portal>
         </Popover.Root>

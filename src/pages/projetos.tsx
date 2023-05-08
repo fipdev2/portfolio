@@ -32,7 +32,7 @@ export default function Projetos() {
         toast.success('Link copiado para área de transferência', {
             style: {
                 border: '2px solid #5F4772',
-                width:'15%',
+                width:'240px',
                 padding: '16px',
                 color: '#fff',
                 background:'rgba(95, 71, 114, 0.3)',
@@ -53,10 +53,10 @@ export default function Projetos() {
     return (
         <>
 
-            <main className='w-screen h-screen flex flex-col items-center justify-center'>
+            <main className='w-screen h-screen flex flex-col items-center justify-center xl:p-4'>
 
                 <Toaster />
-                <div className="max-w-screen-lg w-full flex flex-wrap gap-8 justify-between mb-4">
+                <div className="max-w-screen-lg w-full flex flex-wrap gap-8 justify-between mb-4 2xl:max-w-[calc(100%-70px)] xl:gap-4 md:items-center md:flex-col">
                     {repos.map((repo, index) => (
                         <Repositorio
                             key={`repo_${repo.name}`}

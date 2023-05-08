@@ -30,7 +30,7 @@ export default function Home() {
     <>
 
       <main className='w-screen h-screen flex flex-col items-center justify-center xl:p-4'>
-        <div className='flex justify-between md:flex-col md:items-center bg-purple-gray max-w-[1024px] bg-opacity-50 rounded-3xl border-light-purple border-2 px-16 py-16 xl:p-8 backdrop-blur-md 2xl:max-w-[calc(100%-70px)]'>
+        <div className='flex justify-between md:flex-col md:items-center bg-purple-gray w-[1024px] bg-opacity-50 rounded-3xl border-light-purple border-2 px-16 py-16 xl:p-8 backdrop-blur-md 2xl:max-w-[calc(100%-70px)]'>
           <div className='flex flex-col'>
             <img src={avatar} alt={'Foto de fipdev2'} className='rounded-full border-light-purple border-2 w-80 xl:w-72 mb-2' />
             <p className='md:text-center'><strong>Username: </strong> fipdev2</p>

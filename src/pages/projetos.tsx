@@ -56,7 +56,7 @@ export default function Projetos() {
             <main className='w-screen h-screen flex flex-col items-center justify-center xl:p-4'>
 
                 <Toaster />
-                <div className="max-w-[1024px] w-full flex flex-wrap gap-8 justify-between mb-4 2xl:max-w-[calc(100%-70px)] xl:gap-4 md:items-center md:flex-col">
+                <div className="w-[1024px] flex flex-wrap gap-8 justify-between mb-4 2xl:max-w-[calc(100%-70px)] xl:gap-4 xl:items-center xl:flex-col">
                     {repos.map((repo, index) => (
                         <Repositorio
                             key={`repo_${repo.name}`}

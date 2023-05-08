@@ -25,7 +25,7 @@ export default function Repositorio({ repoName, created_at, updated_at, url, clo
 
     return (
         <Popover.Root>
-            <div className=" grid grid-flow-row grid-rows-1 bg-purple-gray max-w-md xl:max-w-2xl xl:h-36 md:h-24 md:max-w-md bg-opacity-50 rounded-xl border-light-purple border-2 h-24 px-4 py-4 backdrop-blur-md w-full">
+            <div className=" grid grid-flow-row grid-rows-1 bg-purple-gray max-w-md xl:max-w-2xl xl:h-32 md:h-24 md:max-w-md bg-opacity-50 rounded-xl border-light-purple border-2 h-24 px-4 py-4 backdrop-blur-md w-full">
                 <div className="flex items-center justify-between">
                     <strong>{repoName}</strong>
                     <Popover.Trigger className="hover:cursor-pointer border-2 rounded-md border-zinc-400">

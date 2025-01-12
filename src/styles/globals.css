@@ -46,3 +46,28 @@ p{
   background: #5F4772;
   border-radius: 2px;
 }
+ @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 14ch;
+          }
+        }
+
+        @keyframes blink {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: #00ff88;
+          }
+        }
+
+        @keyframes fadeIn {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }

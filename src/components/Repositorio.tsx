@@ -1,6 +1,7 @@
 import * as Popover from "@radix-ui/react-popover";
 import { TiChevronRight } from "react-icons/ti";
 import { VscCopy } from 'react-icons/vsc'
+
 interface repoProps {
     repoName: string
     created_at: string
@@ -10,6 +11,7 @@ interface repoProps {
     cloneSsh: string
     toast: () => void
 }
+
 export default function Repositorio({ repoName, created_at, updated_at, url, cloneHttps, cloneSsh, toast }: repoProps) {
 
     function copyToClipboard(text: string) {

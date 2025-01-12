@@ -2,9 +2,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang="pt-BR">
+    <Html lang="pt-BR bg-black">
       <Head />
-      <body className='bg-[url("../assets/Fundo.svg")] w-screen h-screen bg-no-repeat bg-cover'>
+      <body>
         <Main />
         <NextScript />
       </body>

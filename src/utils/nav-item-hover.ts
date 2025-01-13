@@ -1,10 +1,10 @@
-const navItemHoverIn = (navItem: string) => {
+const navItemHoverIn = (navItem: string):void => {
     const navItemElement = document.getElementById(navItem);
     const underline = navItemElement?.querySelector('div');
     underline!.classList.remove('hidden');
 
 }
-const navItemHoverOut = (navItem: string) => {
+const navItemHoverOut = (navItem: string):void => {
     const navItemElement = document.getElementById(navItem);
     const underline = navItemElement?.querySelector('div');
     underline!.classList.add('hidden');

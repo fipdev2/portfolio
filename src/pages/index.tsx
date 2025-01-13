@@ -1,109 +1,51 @@
 // import { api } from '@/api/api'
-import Navbar from '@/components/navbar'
-import { useState } from 'react'
-import { scrollToNextSection } from '@/utils/scroll-to-next-section'
-import { EducationCard, ExperienceCard } from '@/components/card'
 import { GraduationCapIcon, LanguagesIcon, MedalIcon } from 'lucide-react'
+import {experiencias, formacoes} from '@/data';
+import Navbar from '@/components/navbar'
 import Carrousel from '@/components/carrousel'
- import sanstone from '../assets/sanstone.png'
- import agetransp from '../assets/agetransp.png'
-
+import { EducationCard, ExperienceCard } from '@/components/card'
+import { scrollToNextSection } from '@/utils/scroll-to-next-section'
 export default function Home() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % projetos.length);
-    console.log(activeIndex);
-  };
-
-  const handlePrev = () => {
-    setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + projetos.length) % projetos.length
-    );
-  };
-
-  const formacoes = [
-    {
-      nivel: "Tecnólogo",
-      curso: "Análise e Desenvolvimento de Sistemas",
-      instituicao: "FAETERJ-Rio",
-    }
-  ];
-
-  const experiencias = [
-    {
-      titulo: "Desenvolvedor Fullstack",
-      empresa: "AGETRANSP",
-      periodo: "Abril 2024 - Atual",
-      descricao: "Responsável por desenvolver interfaces responsivas usando React e Tailwind CSS.",
-    },
-    {
-      titulo: "Estagiário de TI",
-      empresa: "Domino's Pizza Brazil",
-      periodo: "Janeiro 2021 - Dezembro 2021",
-      descricao: "Desenvolvimento de sistemas internos com PHP e MySQL para otimizar processos administrativos.",
-    },
-    {
-      titulo: "Desenvolvedor Fullstack Voluntário",
-      empresa: "EJCM",
-      periodo: "Abril 2022 - Maio 2023",
-      descricao: "Desenvolvimento de aplicativos e sites sob demanda, utilizando tecnologias modernas como Next.js e Node.js.",
-    },
-  ];
-
-  const projetos = [
-    {
-      id: 1,
-      nome: "Agetransp",
-      descricao: "Projeto focado na gestão de transportes e rodovias.",
-      imagem: agetransp, // Adicione o caminho da imagem
-      link: "https://agetransp.example.com", // Adicione o link para o projeto
-    },
-    {
-      id: 2,
-      nome: "Sanstone",
-      descricao: "Projeto voltado para soluções de saneamento sustentável.",
-      imagem: sanstone, // Adicione o caminho da imagem
-      link: "https://sanstone.example.com", // Adicione o link para o projeto
-    },
-  ];
 
   return (
     <>
 
       <Navbar />
       <main
-        id='hero'
-        className='flex flex-col text-green-400 items-center justify-center h-screen overflow-y-hidden'>
+          id='hero'
+          className='flex flex-col text-green-400 items-center justify-center h-screen overflow-y-hidden bg-[url("../assets/bg.gif")] bg-cover bg-no-repeat'>
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <div
-          className="text-4xl font-bold typing-animation whitespace-nowrap overflow-hidden border-r-2 border-green-400"
-          style={{ animation: "typing 2s steps(20, end) forwards, blink 0.7s infinite step-end" }}
+            className="text-4xl font-bold typing-animation whitespace-nowrap overflow-hidden border-r-2 border-green-400 z-10"
+            style={{animation: "typing 2s steps(20, end) forwards, blink 0.7s infinite step-end"}}
         >
           Filipe Magalhães
         </div>
         <div
-          className="text-xl text-gray-700 opacity-0 transform translate-y-5 fade-in-animation"
-          style={{ animation: "fadeIn 1s ease-out 2s forwards" }}
+            className="text-xl text-gray-500 opacity-0 transform translate-y-5 fade-in-animation z-10"
+            style={{animation: "fadeIn 1s ease-out 2s forwards"}}
         >
           Desenvolvedor Fullstack
         </div>
         <button
-          onClick={() => scrollToNextSection('experience')}
-          className="opacity-0 transform translate-y-10 relative top-1/4 text-green-400 border-2 border-green-400 rounded-full px-4 py-2 text-lg font-medium hover:bg-green-400 hover:text-gray-900 transition-all duration-300 scroll-btn animate-bounce"
-          style={{ animation: "fadeIn 1s ease-out 3s forwards, bounce 2s infinite 3s" }}
+            onClick={() => scrollToNextSection('experience')}
+            className="z-10 opacity-0 transform translate-y-10 relative top-1/4 text-green-400 border-2 border-green-400 rounded-full px-4 py-2 text-lg font-medium hover:bg-green-400 hover:text-gray-900 transition-all duration-300 scroll-btn animate-bounce"
+            style={{animation: "fadeIn 1s ease-out 3s forwards, bounce 2s infinite 3s"}}
         >
           <svg xmlns="http://www.w3.org/2000/svg"
-            width="24" height="24" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" strokeWidth="2"
-            strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-move-down"><
-              path d="M8 18L12 22L16 18" /><
-              path d="M12 2V22" />
+               width="24" height="24" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" strokeWidth="2"
+               strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-move-down">
+            <
+                path d="M8 18L12 22L16 18"/>
+            <
+                path d="M12 2V22"/>
           </svg>
         </button>
       </main>
       <section
-        id='experience'
-        className='flex min-h-screen px-6 pt-20 items-center justify-center bg-zinc-900 p-4 bg-[url("../assets/medal.svg")] bg-no-repeat'>
+          id='experience'
+          className='flex min-h-screen px-6 pt-20 items-center justify-center bg-zinc-900 p-4 bg-[url("../assets/medal.svg")] bg-no-repeat'>
 
         <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
           <div className="flex flex-1 flex-col col-span-1 gap-2">
@@ -175,7 +117,7 @@ export default function Home() {
                   Idiomas
                 </h3>
                 <div className='grid grid-rows-3 gap-2'>
-                  
+
                     <div className='grid grid-cols-8'>
                       <span>Inglês 🇬🇧</span>
                       <div className='inline-flex items-center gap-1'>
@@ -206,7 +148,7 @@ export default function Home() {
                         <div className='h-2 w-2 rounded-2xl bg-white' />
                       </div>
                     </div>
-                  
+
                 </div>
 
               </div>
@@ -251,13 +193,12 @@ export default function Home() {
             <Carrousel
               // activeIndex={activeIndex}
               // projetos={projetos}
-              // handleNext={handleNext}
-              // handlePrev={handlePrev}
+
             />
           </div>
         </div>
 
-      </section> 
+      </section>
     </>
   )
 }

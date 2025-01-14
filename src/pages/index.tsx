@@ -1,6 +1,6 @@
 // import { api } from '@/api/api'
 import { GraduationCapIcon, LanguagesIcon, MedalIcon } from 'lucide-react'
-import {experiencias, formacoes} from '@/data';
+import { experiencias, formacoes } from '@/data';
 import Navbar from '@/components/navbar'
 import Carrousel from '@/components/carrousel'
 import { EducationCard, ExperienceCard } from '@/components/card'
@@ -12,55 +12,55 @@ export default function Home() {
 
       <Navbar />
       <main
-          id='hero'
-          className='flex flex-col text-green-400 items-center justify-center h-screen overflow-y-hidden bg-[url("../assets/bg.gif")] bg-cover bg-no-repeat'>
+        id='hero'
+        className='flex flex-col text-green-400 items-center justify-center h-screen overflow-y-hidden bg-[url("../assets/bg.gif")] bg-cover bg-no-repeat'>
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <div
-            className="text-4xl font-bold typing-animation whitespace-nowrap overflow-hidden border-r-2 border-green-400 z-10"
-            style={{animation: "typing 2s steps(20, end) forwards, blink 0.7s infinite step-end"}}
+          className="text-4xl font-bold typing-animation whitespace-nowrap overflow-hidden border-r-2 border-green-400 z-10"
+          style={{ animation: "typing 2s steps(20, end) forwards, blink 0.7s infinite step-end" }}
         >
           Filipe Magalhães
         </div>
         <div
-            className="text-xl text-gray-500 opacity-0 transform translate-y-5 fade-in-animation z-10"
-            style={{animation: "fadeIn 1s ease-out 2s forwards"}}
+          className="text-xl text-gray-500 opacity-0 transform translate-y-5 fade-in-animation z-10"
+          style={{ animation: "fadeIn 1s ease-out 2s forwards" }}
         >
           Desenvolvedor Fullstack
         </div>
         <button
-            onClick={() => scrollToNextSection('experience')}
-            className="z-10 opacity-0 transform translate-y-10 relative top-1/4 text-green-400 border-2 border-green-400 rounded-full px-4 py-2 text-lg font-medium hover:bg-green-400 hover:text-gray-900 transition-all duration-300 scroll-btn animate-bounce"
-            style={{animation: "fadeIn 1s ease-out 3s forwards, bounce 2s infinite 3s"}}
+          onClick={() => scrollToNextSection('experience')}
+          className="z-10 opacity-0 transform translate-y-10 relative top-1/4 text-green-400 border-2 border-green-400 rounded-full px-4 py-2 text-lg font-medium hover:bg-green-400 hover:text-gray-900 transition-all duration-300 scroll-btn animate-bounce"
+          style={{ animation: "fadeIn 1s ease-out 3s forwards, bounce 2s infinite 3s" }}
         >
           <svg xmlns="http://www.w3.org/2000/svg"
-               width="24" height="24" viewBox="0 0 24 24"
-               fill="none" stroke="currentColor" strokeWidth="2"
-               strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-move-down">
+            width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" strokeWidth="2"
+            strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-move-down">
             <
-                path d="M8 18L12 22L16 18"/>
+              path d="M8 18L12 22L16 18" />
             <
-                path d="M12 2V22"/>
+              path d="M12 2V22" />
           </svg>
         </button>
       </main>
       <section
-          id='experience'
-          className='flex min-h-screen px-6 pt-20 items-center justify-center bg-zinc-900 p-4 bg-[url("../assets/medal.svg")] bg-no-repeat'>
+        id='experience'
+        className='flex min-h-screen px-6 pt-20 items-center justify-center bg-zinc-900 p-4 bg-[url("../assets/medal.svg")] bg-no-repeat'>
 
         <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
-          <div className="flex flex-1 flex-col col-span-1 gap-2">
+          <div className="flex flex-1 flex-col col-span-1 gap-2 items-end">
 
-            <h2 className='sm:text-5xl xl:text-6xl 2xl:text-7xl text-8xl leading-none  break-words uppercase font-black'
+          <h2 className='sm:text-5xl xl:text-6xl text-9xl leading-none  break-words uppercase font-black w-3/5 md:w-full lg:w-full xl:w-full'
             >
               Experiência
             </h2>
-            <p className='text-justify'>
+            {/* <p className='text-justify'>
               Desenvolvedor de software com 2 anos de experiência em criação e manutenção de aplicativos web e mobile. Hábil em
               diversas linguagens de programação, incluindo JavaScript, PHP e Java, com forte conhecimento em frameworks como
               React, Laravel e SpringBoot. Experiência em trabalhar em equipes ágeis, colaborando em todas as fases do ciclo de
               desenvolvimento de software, desde o planejamento até a implementação. Motivado por desafios técnicos e comprometido
               em entregar soluções eficientes que atendam às necessidades dos usuários.
-            </p>
+            </p> */}
           </div>
           <div className='col-span-2 flex flex-col'>
             <ul className='flex flex-col space-y-0 gap-2'>
@@ -78,8 +78,9 @@ export default function Home() {
         className='flex min-h-screen px-6 pt-20 items-center justify-center bg-black p-4 bg-[url("../assets/education.svg")] bg-no-repeat'>
 
         <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
-          <div className="flex flex-1 flex-col col-span-1 gap-2">
-            <h2 className='sm:text-5xl xl:text-6xl 2xl:text-7xl text-8xl leading-none  break-words uppercase font-black'
+          <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
+
+          <h2 className='sm:text-5xl xl:text-6xl text-9xl leading-none  break-words uppercase font-black w-3/5 md:w-full lg:w-full xl:w-full'
             >
               Formação
             </h2>
@@ -118,36 +119,36 @@ export default function Home() {
                 </h3>
                 <div className='grid grid-rows-3 gap-2'>
 
-                    <div className='grid grid-cols-8'>
-                      <span>Inglês 🇬🇧</span>
-                      <div className='inline-flex items-center gap-1'>
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                      </div>
+                  <div className='grid grid-cols-8'>
+                    <span>Inglês 🇬🇧</span>
+                    <div className='inline-flex items-center gap-1'>
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
                     </div>
-                    <div className='grid grid-cols-8'>
-                      <span>Francês 🇫🇷</span>
-                      <div className='inline-flex items-center gap-1'>
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-zinc-600' />
-                        <div className='h-2 w-2 rounded-2xl bg-zinc-600' />
-                      </div>
+                  </div>
+                  <div className='grid grid-cols-8'>
+                    <span>Francês 🇫🇷</span>
+                    <div className='inline-flex items-center gap-1'>
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-zinc-600' />
+                      <div className='h-2 w-2 rounded-2xl bg-zinc-600' />
                     </div>
-                    <div className='grid grid-cols-8'>
-                      <span>Português 🇧🇷</span>
-                      <div className='inline-flex items-center gap-1'>
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                        <div className='h-2 w-2 rounded-2xl bg-white' />
-                      </div>
+                  </div>
+                  <div className='grid grid-cols-8'>
+                    <span>Português 🇧🇷</span>
+                    <div className='inline-flex items-center gap-1'>
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
+                      <div className='h-2 w-2 rounded-2xl bg-white' />
                     </div>
+                  </div>
 
                 </div>
 
@@ -180,19 +181,20 @@ export default function Home() {
         </div>
 
       </section>
-       <section
+      <section
         id='projects'
         className='px-6 flex justify-center items-center min-h-screen bg-zinc-900 '>
         <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
-
-          <h2 className='sm:text-5xl xl:text-6xl 2xl:text-7xl text-8xl leading-none  break-words uppercase font-black'
-          >
-            Projetos
-          </h2>
+          <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
+            <h2 className='sm:text-5xl xl:text-6xl text-9xl leading-none  break-words uppercase font-black w-3/5 md:w-full lg:w-full xl:w-full'
+            >
+              Projetos
+            </h2>
+          </div>
           <div className='flex items-center justify-center flex-1 col-span-2'>
             <Carrousel
-              // activeIndex={activeIndex}
-              // projetos={projetos}
+            // activeIndex={activeIndex}
+            // projetos={projetos}
 
             />
           </div>

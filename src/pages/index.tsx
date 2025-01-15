@@ -50,7 +50,7 @@ export default function Home() {
 
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
                     <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
-                        <h2 className='lg:text-5xl xl:text-8xl text-9xl leading-none  break-words uppercase font-black w-96 xl:w-72 lg:w-full'
+                        <h2 className='lg:text-5xl xl:text-8xl text-9xl leading-none break-words uppercase font-black w-96 xl:w-72 lg:w-full'
                         >
                             Experiência
                         </h2>

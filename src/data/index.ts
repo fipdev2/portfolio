@@ -1,6 +1,7 @@
 import sanstone from '@/assets/sanstone.png'
 import agetransp from '@/assets/agetransp.png'
 import faeterj from '@/assets/faeterj.png'
+
 const projetos = [
     {
         id: 1,
@@ -38,7 +39,9 @@ const experiencias = [
         titulo: "Desenvolvedor Fullstack",
         empresa: "AGETRANSP",
         periodo: "Abril 2024 - Atual",
-        descricao: "Responsável por desenvolver interfaces responsivas usando React e Tailwind CSS.",
+        descricao: ["Criação do website institucional com acesso a notícias e relatórios",
+            "Desenvolvimento de uma plataforma interna para gerenciamento de publicações no website, administração de tarefas internas.",
+        ],
     },
     {
         titulo: "Estagiário de TI",

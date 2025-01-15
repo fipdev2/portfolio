@@ -3,20 +3,23 @@ interface CardItem {
     edu?: Education;
     bg: string;
 }
+
 interface Experience {
     titulo: string;
     empresa: string;
     periodo: string;
-    descricao: string;
+    descricao: string | string[];
 }
+
 interface Education {
     nivel: string;
     curso: string;
     instituicao: string;
 }
 
-function ExperienceCard({ bg, exp }: CardItem) {
+function ExperienceCard({bg, exp}: CardItem) {
 
+    // @ts-ignore
     return (
         <>
             <li className={`flex flex-1 bg-${bg}`}>
@@ -27,7 +30,11 @@ function ExperienceCard({ bg, exp }: CardItem) {
                     </h3>
                     <h4 className="text-xl font-bold my-2">{exp?.empresa}</h4>
                     <p className="text-gray-400 text-sm mb-4 ${university}">{exp?.periodo}</p>
-                    <p className="text-white">{exp?.descricao}</p>
+                    {typeof (exp!.descricao) === typeof (["oi", "a"])
+                        ?
+                        (exp!.descricao! as Array<string>).map((desc, index) => (
+                            <p key={index} className="text-white">{desc}</p>)) :
+                        <p className="text-white">{exp?.descricao}</p>}
                 </div>
             </li>
 
@@ -36,7 +43,7 @@ function ExperienceCard({ bg, exp }: CardItem) {
     );
 }
 
-function EducationCard({ bg, edu }: CardItem) {
+function EducationCard({bg, edu}: CardItem) {
     return (
         <li className={`flex flex-1 bg-${bg}`}>
             <div
@@ -54,4 +61,4 @@ function EducationCard({ bg, edu }: CardItem) {
     )
 }
 
-export { ExperienceCard, EducationCard };
+export {ExperienceCard, EducationCard};

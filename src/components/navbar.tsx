@@ -83,10 +83,10 @@ const Navbar = () => {
                     <div
                         className={`${isMenuOpen === false && 'sm:hidden md:hidden'} hidden absolute top-0 right-2 md:inline-flex`}
                     >
-                        <ul className="flex flex-col font-medium mt-4 bg-zinc-50 dark:bg-zinc-800 dark:border-zinc-700 p-2">
+                        <ul className="flex flex-col font-medium mt-4 bg-zinc-50 bg-zinc-800 border-zinc-700 p-2">
                             <button
                                 onClick={() => setIsMenuOpen(false)}
-                                className='flex items-center justify-center w-5  place-self-end focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600'>
+                                className='flex items-center justify-center w-5  place-self-end focus:outline-none focus:ring-2 focus:ring-zinc-200 text-zinc-400 dark:focus:ring-zinc-600'>
                                 <X/>
                             </button>
                             <li>

@@ -106,7 +106,7 @@ const Carrousel = () => {
                 <CarouselContent>
                     {projetos.map((projeto: Projeto, index) => {
                         return (
-                            <CarouselItem key={index} className={'bg-amber-300'}>
+                            <CarouselItem key={index}>
                                 <div className='h-96 overflow-hidden rounded-xl bg-black md:h-80 sm:h-56'>
                                     <a
                                         href={projeto.link}

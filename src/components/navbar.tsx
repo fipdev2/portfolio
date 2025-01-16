@@ -81,9 +81,9 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <div
-                        className={`${isMenuOpen === false && 'sm:hidden md:hidden'} hidden absolute top-0 right-2 md:inline-flex`}
+                        className={`${isMenuOpen === false && 'sm:hidden md:hidden'} hidden absolute top-[-1rem] right-0 md:inline-flex animate-slide-left duration-500`}
                     >
-                        <ul className="flex flex-col font-medium mt-4 bg-zinc-50 bg-zinc-800 border-zinc-700 p-2">
+                        <ul className="flex flex-col font-medium mt-4 bg-zinc-800 border-zinc-700 p-2">
                             <button
                                 onClick={() => setIsMenuOpen(false)}
                                 className='flex items-center justify-center w-5  place-self-end focus:outline-none focus:ring-2 focus:ring-zinc-200 text-zinc-400 dark:focus:ring-zinc-600'>

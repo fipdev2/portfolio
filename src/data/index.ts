@@ -5,23 +5,22 @@ import faeterj from '@/assets/faeterj.png'
 const projetos = [
     {
         id: 1,
-        nome: "Projeto Agetransp",
-        descricao: "Site desenvolvido para gestão de transportes e rodovias.",
+        nome: "Website AGETRANSP",
+        descricao: "Site desenvolvido para divulgação de informações sobre concessionárias e processos regulatórios",
         imagem: agetransp,
         link: "http://www.agetransp.rj.gov.br",
     },
     {
         id: 2,
-        nome: "Projeto Sanstone",
-        descricao: "Plataforma para soluções de saneamento sustentável.",
+        nome: "Sanstone",
+        descricao: "Marmoraria digital",
         imagem: sanstone,
-        link: "https://projeto.sanstone.com",
+        link: "https://projeto.sanstone.com.br",
     },
     {
         id: 3,
         nome: "Site FAETERJ",
-        descricao:
-            "Ferramenta para gestão de negócios de microempreendedoras.",
+        descricao: "Site desenvolvido como trabalho na disciplina Construção de Aplicações Web",
         imagem: faeterj,
         link: "https://faeterj-rio.vercel.app",
     },
@@ -39,7 +38,7 @@ const experiencias = [
         titulo: "Desenvolvedor Fullstack",
         empresa: "AGETRANSP",
         periodo: "Abril 2024 - Atual",
-        descricao: ["Criação do website institucional com acesso a notícias e relatórios",
+        descricao: ["Criação do website institucional com acesso a notícias e relatórios.",
             "Desenvolvimento de uma plataforma interna para gerenciamento de publicações no website, administração de tarefas internas.",
         ],
     },
@@ -47,14 +46,19 @@ const experiencias = [
         titulo: "Estagiário de TI",
         empresa: "Domino's Pizza Brazil",
         periodo: "Janeiro 2021 - Dezembro 2021",
-        descricao: "Desenvolvimento de sistemas internos com PHP e MySQL para otimizar processos administrativos.",
+        descricao: ["Manutenção de APIs SOAP e desenvolvimento de APIs REST para integração com aplicações internas e empresas colaboradoras.",
+            "Manutenção de lojas no iFood."
+        ]
     },
     {
         titulo: "Desenvolvedor Fullstack Voluntário",
         empresa: "EJCM",
         periodo: "Abril 2022 - Maio 2023",
-        descricao: "Desenvolvimento de aplicativos e sites sob demanda, utilizando tecnologias modernas como Next.js e Node.js.",
+        descricao: [
+            "Desenvolvimento de aplicativos e sites sob demanda, utilizando tecnologias modernas como React e Node.js.",
+            "Lecionamento de aulas de programação utilizando a stack da empresa para capacitar novos membros."
+        ]
     },
 ];
 
-export {projetos, experiencias, formacoes};
+export { projetos, experiencias, formacoes };

@@ -157,20 +157,26 @@ export default function Home() {
                                     <GraduationCapIcon/>
                                     Cursos & Certificados
                                 </h3>
-                                <a href=""
-                                   className='hover:bg-green-800 w-full py-1'>
+                                <a 
+                                target="_blank"
+                                href="https://app.rocketseat.com.br/certificates/3934dac3-6481-45db-91ca-4f51d8380cdf"
+                                   className='hover:underline w-full py-1'>
                                     Curso Java Gratuito
                                     <span className='float-right text-gray-400'>5h</span>
                                 </a>
-                                <a href=""
-                                   className='hover:bg-green-800 w-full py-1'>
+                                <a 
+                                target="_blank"
+                                href="https://app.rocketseat.com.br/certificates/38c246eb-9a3a-4d51-8d7d-2b9661bf257f"
+                                   className='hover:underline w-full py-1'>
                                     NLW Expert - Trilha Java
-                                    <span className='float-right text-gray-400'>9h</span>
+                                    <span className='float-right text-gray-400'>7h</span>
                                 </a>
-                                <a href=""
-                                   className='hover:bg-green-800 w-full py-1'>
-                                    NLW Expert - Trilha Java
-                                    <span className='float-right text-gray-400'>5h</span>
+                                <a 
+                                target="_blank"
+                                href="https://app.rocketseat.com.br/certificates/4ff7d8b4-5a0b-4451-8797-69aba69d190b"
+                                   className='hover:underline w-full py-1'>
+                                    NLW IA - Inteligência artificial em programação
+                                    <span className='float-right text-gray-400'>10h</span>
                                 </a>
                             </div>
                         </div>
@@ -181,7 +187,7 @@ export default function Home() {
             </section>
             <section
                 id='projects'
-                className='px-6 flex justify-center items-center min-h-screen bg-zinc-900 '>
+                className='px-6 flex justify-center items-center min-h-screen bg-zinc-900 bg-[url("../assets/fundo_projetos(3).svg")] bg-no-repeat bg-left'>
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
                     <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
                         <h2 className='lg:text-5xl xl:text-8xl text-9xl leading-none  break-words uppercase font-black w-96 xl:w-72 lg:w-full'

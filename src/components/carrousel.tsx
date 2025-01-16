@@ -109,18 +109,16 @@ const Carrousel = () => {
                         return (
                             <CarouselItem key={index}>
                                 <div className='overflow-hidden'>
-                                    <div className="hidden md:block mb-2">
-
-                                    </div>
                                     <a
                                         href={projeto.link}
                                         target="_blank"
-                                        className="relative block shadow-lg "
+                                        className="relative block shadow-lg"
                                     >
                                         <Image
                                             src={projeto.imagem}
+                                            width={1024}
                                             alt={projeto.nome}
-                                            className="transition-opacity duration-300 w-full rounded-xl"
+                                            className="transition-opacity duration-300 rounded-xl"
                                             style={{
                                                 filter: "brightness(0.8)",
                                             }}

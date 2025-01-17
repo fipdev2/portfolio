@@ -46,7 +46,7 @@ export default function Home() {
             </main>
             <section
                 id='experience'
-                className='flex min-h-screen px-6 pt-20 items-center justify-center bg-zinc-900 p-4 bg-[url("../assets/medal.svg")] bg-no-repeat'>
+                className='flex min-h-screen px-6 pt-28 items-start justify-center bg-zinc-900 p-4 bg-[url("../assets/medal.svg")] bg-no-repeat'>
 
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
                     <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
@@ -75,7 +75,7 @@ export default function Home() {
             </section>
             <section
                 id='education'
-                className='flex min-h-screen px-6 pt-20 items-center justify-center bg-black p-4 bg-[url("../assets/education.svg")] bg-no-repeat'>
+                className='flex min-h-screen px-6 pt-28 items-start justify-center bg-black p-4 bg-[url("../assets/education.svg")] bg-no-repeat'>
 
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
                     <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
@@ -187,7 +187,7 @@ export default function Home() {
             </section>
             <section
                 id='projects'
-                className='px-6 pt-16 flex justify-center items-start min-h-screen bg-zinc-900 bg-[url("../assets/fundo_projetos(3).svg")] bg-no-repeat bg-left'>
+                className='px-6 flex justify-center pt-28 items-start min-h-screen bg-zinc-900 p-4 bg-[url("../assets/fundo_projetos(3).svg")] bg-no-repeat bg-left'>
                 <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-cols-3 gap-8 '>
                     <div className="flex flex-1 flex-col col-span-1 gap-2  items-end">
                         <h2 className='sm:text-4xl lg:text-5xl xl:text-8xl text-9xl leading-none  break-words uppercase font-black w-96 xl:w-72 lg:w-full'

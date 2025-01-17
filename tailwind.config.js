@@ -29,12 +29,21 @@ module.exports = {
 					'100%': {
 						transform: 'translateX(0)'
 					}
-
+				},
+				'close':{
+					'0%':{
+						transform: 'translateX(0)'
+					},
+					'100%':{
+						transform: 'translateX(100px)'
+					}
 				}
+
 			},
 			animation: {
-				'fade-up': 'fade-up 0.5s linear',
-				'slide-left': 'slide-left 0.2s ease-out'
+				'fade-up': 'fade-up 0.5s ease-out',
+				'slide-left': 'slide-left 0.2s linear',
+				'close': 'close 0.2s linear'
 			},
 			backgroundColor: {
 				'purple-gray': '#111112'

@@ -17,7 +17,7 @@ export default function Home() {
                 className='flex flex-col text-green-400 items-center justify-center h-screen overflow-y-hidden bg-[url("../assets/bg.gif")] bg-cover bg-no-repeat'>
                 <div className="absolute inset-0 bg-black bg-opacity-80 h-screen"></div>
                 <div
-                    className="text-4xl font-bold typing-animation whitespace-nowrap overflow-hidden border-r-2 border-green-400 z-10"
+                    className="text-4xl font-bold typing-animation whitespace-nowrap overflow-x-hidden border-r-2 border-green-400 z-10 text-center"
                     style={{ animation: "typing 2s steps(20, end) forwards, blink 0.7s infinite step-end" }}
                 >
                     Filipe Magalhães

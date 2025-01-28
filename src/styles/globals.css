@@ -51,7 +51,7 @@ p{
             width: 0;
           }
           to {
-            width: 14ch;
+            width: 18rem;
           }
         }
 
@@ -72,8 +72,3 @@ p{
           }
         }
 
-        @layer base {
-  :root {
-    --radius: 0.5rem;
-  }
-}

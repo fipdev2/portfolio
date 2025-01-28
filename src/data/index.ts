@@ -45,7 +45,7 @@ const experiencias = [
     {
         titulo: "Estagiário de TI",
         empresa: "Domino's Pizza Brazil",
-        periodo: "Janeiro 2021 - Dezembro 2021",
+        periodo: "Outubro 2023 - Abril 2024",
         descricao: ["Manutenção de APIs SOAP e desenvolvimento de APIs REST para integração com aplicações internas e empresas colaboradoras.",
             "Manutenção de lojas no iFood."
         ]
